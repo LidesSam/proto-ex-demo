@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="40" height="15" tilewidth="32" tileheight="32" nextobjectid="140">
+ <tileset firstgid="1" name="tileset" tilewidth="32" tileheight="32" tilecount="64">
+  <image source="../../images/tileset.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="65" name="plataforma" tilewidth="32" tileheight="32" tilecount="2">
+  <image source="../../images/plataforma.png" width="64" height="32"/>
+ </tileset>
+ <tileset firstgid="67" name="proto_basic_item" tilewidth="16" tileheight="16" tilecount="3">
+  <image source="../../images/proto_basic_item.png" width="48" height="16"/>
+ </tileset>
+ <tileset firstgid="70" name="proto_e_fly" tilewidth="32" tileheight="32" tilecount="4">
+  <image source="../../images/proto_e_fly.png" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="74" name="proto_e_jumper" tilewidth="32" tileheight="32" tilecount="12">
+  <image source="../../images/proto_e_jumper.png" width="128" height="96"/>
+ </tileset>
+ <tileset firstgid="86" name="static_enemy" tilewidth="32" tileheight="32" tilecount="4">
+  <image source="../../images/static_enemy.png" width="64" height="64"/>
+ </tileset>
+ <layer name="Solid" width="40" height="15">
+  <data encoding="base64" compression="zlib">
+   eJztlEEKgCAUBc0kyIQou0OXqO5/rJ6kG1P74UIXDgy5eMiAEGONRiOGgHvpiAimTbGnr8ZG07bBA57wKpvzwrSJ0hEJ3PvWimKtLwfX10EO+8DZfOePDSfo30PZur4RSjgFzoPdpzaSoH8PZev+Lwtcoc44U/yz17btBrI9BpQ=
+  </data>
+ </layer>
+ <objectgroup name="Player">
+  <object id="1" type="player_start" x="146.667" y="339.33" width="32" height="32"/>
+ </objectgroup>
+ <objectgroup color="#00ff00" name="Plataforma">
+  <object id="101" type="spring" x="256" y="368" width="32" height="16"/>
+  <object id="111" type="fall" gid="15" x="224" y="256" width="32" height="32">
+   <properties>
+    <property name="tile" value="1"/>
+   </properties>
+  </object>
+  <object id="115" type="fall" gid="39" x="192" y="256" width="32" height="32">
+   <properties>
+    <property name="tile" value="4"/>
+   </properties>
+  </object>
+  <object id="116" type="fall" gid="63" x="128" y="256" width="32" height="32">
+   <properties>
+    <property name="tile" value="7"/>
+   </properties>
+  </object>
+  <object id="117" type="fall" gid="7" x="160" y="256" width="32" height="32">
+   <properties>
+    <property name="tile" value="0"/>
+   </properties>
+  </object>
+  <object id="118" name="h" type="plataforma" x="326.667" y="334.667" width="161.333" height="29.3333">
+   <properties>
+    <property name="LMTTIPE" value="0"/>
+    <property name="TIPE" value="0"/>
+    <property name="dir" value="0"/>
+   </properties>
+  </object>
+  <object id="121" name="v" type="plataforma" x="514" y="298" width="48" height="62">
+   <properties>
+    <property name="LMTTIPE" value="0"/>
+    <property name="TIPE" value="0"/>
+    <property name="dir" value="1"/>
+   </properties>
+  </object>
+  <object id="122" name="hcr" type="plataforma" x="835.333" y="332" width="161.333" height="29.3333">
+   <properties>
+    <property name="LMTTIPE" value="1"/>
+    <property name="TIPE" value="1"/>
+    <property name="dir" value="0"/>
+   </properties>
+  </object>
+  <object id="123" name="hcl" type="plataforma" x="599.333" y="334.667" width="161.333" height="29.3333">
+   <properties>
+    <property name="LMTTIPE" value="0"/>
+    <property name="TIPE" value="1"/>
+    <property name="dir" value="0"/>
+   </properties>
+  </object>
+  <object id="124" name="vcu" type="plataforma" x="775.333" y="288" width="38.6667" height="72.666">
+   <properties>
+    <property name="LMTTIPE" value="0"/>
+    <property name="TIPE" value="1"/>
+    <property name="dir" value="1"/>
+   </properties>
+  </object>
+  <object id="125" name="vcd" type="plataforma" x="1024.67" y="288" width="38.6667" height="67.333">
+   <properties>
+    <property name="LMTTIPE" value="1"/>
+    <property name="TIPE" value="1"/>
+    <property name="dir" value="1"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#0000ff" name="Enemy">
+  <object id="131" type="sunmask" gid="70" x="358" y="207" width="32" height="32"/>
+  <object id="132" type="cloud" gid="72" x="197.75" y="312.75" width="32" height="32"/>
+  <object id="134" type="jumprobo" gid="82" x="312" y="180" width="32" height="32"/>
+  <object id="135" type="jrobo" gid="78" x="420" y="158" width="32" height="32"/>
+  <object id="137" type="jump" gid="77" x="432" y="254" width="32" height="32"/>
+  <object id="138" type="trishot" gid="87" x="582" y="308" width="32" height="32">
+   <properties>
+    <property name="dir" value=""/>
+   </properties>
+  </object>
+  <object id="139" type="trishot" gid="87" x="538" y="257" width="32" height="32">
+   <properties>
+    <property name="dir" value="1"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

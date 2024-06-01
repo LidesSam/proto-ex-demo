@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="24" height="16" tilewidth="32" tileheight="32" nextobjectid="45">
+ <tileset firstgid="1" name="tileset" tilewidth="32" tileheight="32" tilecount="64">
+  <image source="../../images/tileset.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="65" name="plataforma" tilewidth="32" tileheight="32" tilecount="2">
+  <image source="../../images/plataforma.png" width="64" height="32"/>
+ </tileset>
+ <tileset firstgid="67" name="proto_basic_item" tilewidth="16" tileheight="16" tilecount="3">
+  <image source="../../images/proto_basic_item.png" width="48" height="16"/>
+ </tileset>
+ <layer name="Solid" width="24" height="16">
+  <data encoding="base64" compression="zlib">
+   eJxjZGBgYKIRZgZiTiDmA2IhKmNeIOaGmg+iqQ1g5o6aP2r+YDZfEIiFqWSmPRKGmasIxMo41NoAsR2UTUgc3XyYuZpArE0l9yMDmLn0MF8NiJWojFWh5hsCsRGNsDEQAwAfXhCJ
+  </data>
+ </layer>
+ <objectgroup name="Player">
+  <object id="1" type="player_start" x="65.3333" y="413" width="32" height="32"/>
+ </objectgroup>
+ <objectgroup color="#55ff00" name="Plataforma">
+  <object id="36" name="v" type="plataforma" x="533" y="99" width="64" height="221">
+   <properties>
+    <property name="LMTTIPE" value="0"/>
+    <property name="TIPE" value="0"/>
+    <property name="dir" value="1"/>
+   </properties>
+  </object>
+  <object id="38" name="hcl" type="plataforma" x="192" y="304" width="320" height="16">
+   <properties>
+    <property name="LMTTIPE" value="0"/>
+    <property name="TIPE" value="1"/>
+    <property name="dir" value="0"/>
+   </properties>
+  </object>
+  <object id="40" type="spring" x="128" y="432" width="32" height="16"/>
+  <object id="41" type="health" gid="67" x="610" y="444" width="16" height="16"/>
+  <object id="42" type="health" gid="67" x="646.5" y="442" width="16" height="16"/>
+  <object id="43" type="health" gid="67" x="681.5" y="445.5" width="16" height="16"/>
+ </objectgroup>
+ <objectgroup color="#0055ff" name="Enemys">
+  <object id="9" type="boss" x="608" y="156" width="48" height="48"/>
+ </objectgroup>
+ <objectgroup color="#ff0000" name="Trap">
+  <object id="26" type="fire_trap" x="256" y="416" width="32" height="32"/>
+  <object id="28" type="fire_trap" x="416" y="416" width="32" height="32"/>
+  <object id="29" type="fire_trap" x="192.25" y="416" width="32" height="32"/>
+  <object id="30" type="fire_trap" x="479.75" y="416" width="32" height="32"/>
+  <object id="31" type="fire_trap" x="336" y="416" width="32" height="32"/>
+  <object id="32" type="fire_trap" x="560" y="416" width="32" height="32"/>
+  <object id="33" type="needle" x="608" y="288" width="96" height="32"/>
+  <object id="34" type="needle" x="192" y="320" width="128" height="32"/>
+  <object id="44" type="needle" x="384" y="320" width="128" height="32"/>
+ </objectgroup>
+</map>

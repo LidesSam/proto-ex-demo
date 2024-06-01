@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="60" height="40" tilewidth="32" tileheight="32" nextobjectid="144">
+ <tileset firstgid="1" name="tileset" tilewidth="32" tileheight="32" tilecount="64">
+  <image source="../../images/tileset.png" width="256" height="256"/>
+  <tile id="7">
+   <animation>
+    <frame tileid="14" duration="200"/>
+    <frame tileid="6" duration="500"/>
+   </animation>
+  </tile>
+ </tileset>
+ <tileset firstgid="65" name="proto_e_jumper" tilewidth="32" tileheight="32" tilecount="12">
+  <image source="../../images/proto_e_jumper.png" width="128" height="96"/>
+ </tileset>
+ <tileset firstgid="77" name="EnemyWalker" tilewidth="32" tileheight="32" tilecount="4">
+  <image source="../../images/proto_e_walk.png" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="81" name="proto_basic_item" tilewidth="16" tileheight="16" tilecount="3">
+  <image source="../../images/proto_basic_item.png" width="48" height="16"/>
+ </tileset>
+ <layer name="Solid" width="60" height="40">
+  <data encoding="base64" compression="zlib">
+   eJzFWmtvE0EMNKQQQQMVJR8BCVqISAMVtAgJAvn//4q1eqM6rvfhXSeMNCI5cns35+f6eklE7xM/OHiR+CjxcSNnwdfoXe8kcZP4KvHcwdeJ3xK/N/Im+Bq96y0mvccA2+PiSNfK4Zh62VY3g2ucCfZgScfTy7E4C1rrpPO8HT3UK5/hauSmFJ4lngatteg8jzVZ9i35yzbxT+LfytraBp8Tr9pvrYjltD7f55vEt4nvjO9z2vd/5GcLtRiZT5T6cYyhbcD2jdLLWDp+Cy3IV5GxBUTolfaShC096zCQr/henlKsZq2X6+VofpboyVnIV6z3Od1p1n1MLzz+1ru+jlcN/UwQv9Cr2ZJP54qt+Swaln/rZ474zfVm3IOxD0CDpcOj81IxErk4l4jor3aCNfxUtIB9wCF6zxG9sGuLTg+4TvOziKxdQK9e6bsteku+q/8Pe6LIXA549XJO0HG6a6D2Y035zLCP6qk3OmfpvcUx90etQN/Z2yOXwPn69gDr1lCaTXykO718b7I/lfDuB2WNxsxkVvgcDY7RL4nrxK9kzy9G9rkMqw/hXIFe47TweeS6OUBzLg/neucWWr0WQ/Ya3FtIjfJ4q629PhEx8/AAeyPco9SbOy73lGfTd/z2Cd334SNx4PEnz95O9s7aprnjyB/yX6v/1r23d/+Wq9ky13Hd4ry2oH0bWLWM19P+LG0qj0vo/cGc7P5bn+fFhuw8zvl7PRGxr2sX9Ov1mPI5Spu2QtcLT/9bsjnXSa7Fa0GdyxH7eh/E32Wu4/y1EQRyNi1B663lXYlaD6Xn7Tq35c638qalV/++5T2J1sv3gB6ptm/y9FCWttxMwfLTkt7c/r9lHsAapN4V5TV79HrmJZaflvS2vpux/J7vC3W1NgPQefUQfQ1Q0tuCWuxYvq8xMuPyPiPWeUv9emuxo4lZoKcP0XpG7I9aFL0fRCy8oIeaX9J4XW6BFUc5fy7t1TwzJUs39h6HitVS7YcvS738XH7QfX2/VrRqam3WKHMf+tFIvVJjbhaEmQliWAL9gpy3SL16NmutUYJ+v+WhPHc7Xb9l3oX6iB5V27/0dwRSL/NX4m+KnydHALbHzIT1jr6nZNuu6P/MhWqQ/bfU+4n659sj8/Eon7Dey/Mx6afsmxva938dm9uGz/L8ltmsZJRP6BiziFzzD6UVY5Y=
+  </data>
+ </layer>
+ <objectgroup name="Player">
+  <object id="1" type="player_start" x="67" y="575" width="32" height="32"/>
+  <object id="28" type="tower" gid="23" x="512" y="1216" width="32" height="32" rotation="180"/>
+  <object id="29" type="classicland" gid="23" x="32" y="608" width="32" height="32"/>
+  <object id="35" type="fallen" gid="23" x="1504" y="320" width="32" height="32"/>
+  <object id="36" type="corridor" gid="23" x="1855.92" y="768.208" width="32" height="32" rotation="180"/>
+ </objectgroup>
+ <objectgroup color="#0000ff" name="Enemys">
+  <object id="40" type="jrobo" gid="73" x="1088" y="1111" width="32" height="32"/>
+  <object id="41" type="jrobo" gid="73" x="1326" y="1096" width="32" height="32"/>
+  <object id="53" type="jump" gid="68" x="450.167" y="1104.17" width="32" height="32"/>
+  <object id="54" type="roller" gid="77" x="224" y="1056" width="32" height="32"/>
+  <object id="55" type="jump" gid="68" x="256" y="1232" width="32" height="32"/>
+  <object id="56" type="jump" gid="68" x="540" y="704" width="32" height="32"/>
+  <object id="71" type="roller" gid="77" x="544" y="222" width="32" height="32"/>
+  <object id="73" type="roller" gid="77" x="650" y="657" width="32" height="32"/>
+  <object id="76" type="jrobo" gid="73" x="1422" y="1024" width="32" height="32"/>
+  <object id="77" type="jrobo" gid="73" x="1184" y="1024" width="32" height="32"/>
+  <object id="80" type="seeker" gid="79" x="1505" y="182" width="32" height="32"/>
+  <object id="83" type="jump" gid="68" x="632" y="1233.33" width="32" height="32"/>
+  <object id="85" type="jump" gid="68" x="708" y="1234.67" width="32" height="32"/>
+  <object id="86" type="seeker" gid="79" x="338" y="1056" width="32" height="32"/>
+  <object id="87" type="seeker" gid="79" x="1721.33" y="188" width="32" height="32"/>
+  <object id="95" type="jump" gid="68" x="265.333" y="382" width="32" height="32"/>
+  <object id="96" type="jump" gid="68" x="148" y="156.666" width="32" height="32"/>
+  <object id="97" type="seeker" gid="79" x="169.333" y="316.666" width="32" height="32"/>
+  <object id="98" type="jump" gid="68" x="630.667" y="338" width="32" height="32"/>
+  <object id="100" type="jumprobo" gid="69" x="855" y="383" width="32" height="32"/>
+  <object id="107" type="jump" gid="68" x="974" y="507" width="32" height="32"/>
+  <object id="108" type="jump" gid="68" x="692" y="502" width="32" height="32"/>
+  <object id="109" type="jrobo" gid="73" x="1494" y="588" width="32" height="32"/>
+  <object id="110" type="jrobo" gid="73" x="1700" y="558" width="32" height="32"/>
+  <object id="114" type="jump" gid="68" x="798" y="1234" width="32" height="32"/>
+  <object id="120" type="jumprobo" gid="69" x="1738" y="1026" width="32" height="32"/>
+ </objectgroup>
+ <objectgroup color="#ff0000" name="Trap">
+  <object id="17" type="needle" x="1024" y="1248" width="544" height="32"/>
+  <object id="18" type="needle" x="1280" y="608" width="448" height="32"/>
+  <object id="24" type="needle" x="992" y="1088" width="544" height="32"/>
+  <object id="49" type="needle" x="1728" y="576" width="96" height="32">
+   <properties>
+    <property name="Ancho" value=""/>
+   </properties>
+  </object>
+  <object id="52" type="needle" x="1632" y="352" width="128" height="32">
+   <properties>
+    <property name="Ancho" value=""/>
+   </properties>
+  </object>
+  <object id="117" type="needle" x="1824" y="544" width="64" height="32">
+   <properties>
+    <property name="Ancho" value=""/>
+   </properties>
+  </object>
+  <object id="122" type="fire_trap" x="288.333" y="1024" width="32" height="32"/>
+  <object id="123" type="fire_trap" x="176" y="1216" width="32" height="32"/>
+  <object id="124" type="fire_trap" x="316" y="1216" width="32" height="32"/>
+  <object id="126" type="fire_trap" x="736" y="1216" width="32" height="32"/>
+  <object id="128" type="fire_trap" x="1056" y="1198" width="32" height="32"/>
+  <object id="135" type="fire_trap" x="864.667" y="1215.33" width="32" height="32"/>
+  <object id="136" type="fire_trap" x="1216" y="1198" width="32" height="32"/>
+  <object id="138" type="fire_trap" x="162" y="1024" width="32" height="32"/>
+  <object id="139" type="fire_trap" x="864" y="480" width="32" height="32"/>
+  <object id="142" type="fire_trap" x="961" y="480" width="32" height="32"/>
+  <object id="143" type="fire_trap" x="1807" y="288" width="32" height="32"/>
+ </objectgroup>
+ <objectgroup color="#00ff00" name="Plataforma">
+  <object id="20" type="spring" x="251.152" y="592" width="32" height="16"/>
+  <object id="26" type="spring" x="1248" y="560" width="32" height="16"/>
+  <object id="37" type="spring" x="928" y="1040" width="32" height="16"/>
+  <object id="44" type="fall" gid="7" x="1600" y="544" width="32" height="32">
+   <properties>
+    <property name="tile" value="0"/>
+   </properties>
+  </object>
+  <object id="45" type="fall" gid="7" x="1568" y="544" width="32" height="32">
+   <properties>
+    <property name="tile" value="0"/>
+   </properties>
+  </object>
+  <object id="46" type="fall" gid="7" x="1536" y="544" width="32" height="32">
+   <properties>
+    <property name="tile" value="0"/>
+   </properties>
+  </object>
+  <object id="47" type="fall" gid="7" x="1344" y="608" width="32" height="32">
+   <properties>
+    <property name="tile" value="0"/>
+   </properties>
+  </object>
+  <object id="60" name="h" type="plataforma" x="1038.5" y="1213" width="296" height="29.3333">
+   <properties>
+    <property name="LMTTIPE" value="0"/>
+    <property name="TIPE" value="0"/>
+    <property name="dir" value="0"/>
+   </properties>
+  </object>
+  <object id="63" type="spring" x="737" y="848" width="32" height="16"/>
+  <object id="64" type="spring" x="1312.5" y="240" width="32" height="16"/>
+  <object id="65" name="vcd" type="plataforma" x="1082" y="354" width="43.7218" height="127">
+   <properties>
+    <property name="LMTTIPE" value="1"/>
+    <property name="TIPE" value="1"/>
+    <property name="dir" value="1"/>
+   </properties>
+  </object>
+  <object id="74" type="fall" gid="7" x="352" y="224" width="32" height="32">
+   <properties>
+    <property name="tile" value="0"/>
+   </properties>
+  </object>
+  <object id="75" type="fall" gid="7" x="256" y="192" width="32" height="32">
+   <properties>
+    <property name="tile" value="0"/>
+   </properties>
+  </object>
+  <object id="82" type="spring" x="32" y="240" width="32" height="16"/>
+  <object id="89" type="fall" gid="7" x="288" y="192" width="32" height="32">
+   <properties>
+    <property name="tile" value="0"/>
+   </properties>
+  </object>
+  <object id="90" type="fall" gid="7" x="320" y="224" width="32" height="32">
+   <properties>
+    <property name="tile" value="0"/>
+   </properties>
+  </object>
+  <object id="101" name="vcd" type="plataforma" x="1147" y="204" width="43.7218" height="148">
+   <properties>
+    <property name="LMTTIPE" value="1"/>
+    <property name="TIPE" value="1"/>
+    <property name="dir" value="1"/>
+   </properties>
+  </object>
+  <object id="102" type="fall" gid="7" x="1824" y="352" width="32" height="32">
+   <properties>
+    <property name="tile" value="0"/>
+   </properties>
+  </object>
+  <object id="103" type="fall" gid="7" x="1792" y="352" width="32" height="32">
+   <properties>
+    <property name="tile" value="0"/>
+   </properties>
+  </object>
+  <object id="104" type="fall" gid="7" x="1856" y="352" width="32" height="32">
+   <properties>
+    <property name="tile" value="0"/>
+   </properties>
+  </object>
+  <object id="105" type="fall" gid="7" x="1312" y="608" width="32" height="32">
+   <properties>
+    <property name="tile" value="0"/>
+   </properties>
+  </object>
+  <object id="111" type="spring" x="615.091" y="1232" width="32" height="16"/>
+  <object id="112" name="hcr" type="plataforma" x="994" y="1057" width="615" height="23.6666">
+   <properties>
+    <property name="LMTTIPE" value="1"/>
+    <property name="TIPE" value="1"/>
+    <property name="dir" value="0"/>
+   </properties>
+  </object>
+  <object id="115" name="hcr" type="plataforma" x="1312" y="1190" width="242" height="24">
+   <properties>
+    <property name="LMTTIPE" value="1"/>
+    <property name="TIPE" value="1"/>
+    <property name="dir" value="0"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="Items">
+  <object id="70" type="health" gid="81" x="554.667" y="505.333" width="16" height="16"/>
+  <object id="72" type="health" gid="81" x="868" y="375" width="16" height="16"/>
+ </objectgroup>
+</map>

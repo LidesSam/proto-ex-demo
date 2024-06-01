@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="30" height="60" tilewidth="32" tileheight="32" nextobjectid="221">
+ <tileset firstgid="1" name="tileset" tilewidth="32" tileheight="32" tilecount="64">
+  <image source="../../images/tileset.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="65" name="plataforma" tilewidth="32" tileheight="32" tilecount="2">
+  <image source="../../images/plataforma.png" width="64" height="32"/>
+ </tileset>
+ <tileset firstgid="67" name="proto_basic_item" tilewidth="16" tileheight="16" tilecount="3">
+  <image source="../../images/proto_basic_item.png" width="48" height="16"/>
+ </tileset>
+ <tileset firstgid="70" name="proto_e_fly" tilewidth="32" tileheight="32" tilecount="4">
+  <image source="../../images/proto_e_fly.png" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="74" name="proto_e_jumper" tilewidth="32" tileheight="32" tilecount="12">
+  <image source="../../images/proto_e_jumper.png" width="128" height="96"/>
+ </tileset>
+ <tileset firstgid="86" name="static_enemy" tilewidth="32" tileheight="32" tilecount="4">
+  <image source="../../images/static_enemy.png" width="64" height="64"/>
+ </tileset>
+ <layer name="Solid" width="30" height="60">
+  <data encoding="base64" compression="zlib">
+   eJztmc1OwzAQhA0cUEFw4MAJkIBCVCit2iL1AuT93wpbyirDau1du3GiSow0apI6/uKfzTrJiXPudGSfec+8L0b2JXCvvW8q+0rghm2uR+8n72fhvxIhK8VdeL95v0/IbTPqj5VFVqpNnGthp8pxrrWfsb4GGA3jxlTSXhSxWratCeubFXCt2rN9aV4NyW06psTF9mrj++r6OG6NlrhUnxZHG+8teGdrblRSP99633s/HFh3Lldq7z93eG7J+DZ6kSSX5nauSrjECjG1dvF7Q27dKSEr/O673xg3ZWvZNWNp7dWUug4uZB0yvrlC1phxxPOghUtrPMnWdZ81H5Hmrs8RH925wSvX54u5kUs5d+Hi+Ze0hO1Nx165v/lp6XThmgr7/M719yzc/hTO59cZyljmM84rbT6HscUx5Fz6/8v72/tH4VrjKPTtDuqP7Qel4hj7OSeOsH5pn5Ti5sbREMqNoyG5FDsSV+onnje0fTxO1saXc9vuPFynWva5tfEdMueitPi15jUu7RkJ24vXIEnL+5b1AMn6PFgq7b5RK+/H2m19Dh1a0nweg3tM65xj56buzzW5Oe3FeJDWFNZjlvbWuEdb8sIU3FqKcWvlPwu3JjvG1da/tbi1NQW3mYBL86aEe55xHI/hGkBaX9E7V8t3J14u9jzO/SJwJUvfnFLHrQ5c/q7X8v0pVm5rdHiW+wWgv1Tq
+  </data>
+ </layer>
+ <objectgroup name="Player">
+  <object id="1" type="player_start" x="160" y="1792" width="32" height="32"/>
+  <object id="171" type="Yway" gid="23" x="96" y="1824" width="32" height="32"/>
+  <object id="187" type="corridor" gid="23" x="480" y="224" width="32" height="32"/>
+  <object id="188" type="save_t" x="464" y="320" width="32" height="31"/>
+ </objectgroup>
+ <objectgroup color="#00ff00" name="Plataforma">
+  <object id="172" name="hcr" type="plataforma" x="507.333" y="1698" width="246.667" height="16">
+   <properties>
+    <property name="LMTTIPE" value="1"/>
+    <property name="TIPE" value="1"/>
+    <property name="dir" value="0"/>
+   </properties>
+  </object>
+  <object id="173" type="spring" x="190" y="689.334" width="32" height="16"/>
+  <object id="174" type="spring" x="160" y="848" width="32" height="16"/>
+  <object id="184" type="fall" gid="39" x="512" y="576" width="32" height="32">
+   <properties>
+    <property name="tile" value="4"/>
+   </properties>
+  </object>
+  <object id="185" type="fall" gid="39" x="576" y="576" width="32" height="32">
+   <properties>
+    <property name="tile" value="4"/>
+   </properties>
+  </object>
+  <object id="186" type="fall" gid="39" x="544" y="576" width="32" height="32">
+   <properties>
+    <property name="tile" value="4"/>
+   </properties>
+  </object>
+  <object id="191" name="vcd" type="plataforma" x="793.333" y="290.667" width="46.3348" height="283.333">
+   <properties>
+    <property name="LMTTIPE" value="1"/>
+    <property name="TIPE" value="1"/>
+    <property name="dir" value="1"/>
+   </properties>
+  </object>
+  <object id="192" name="h" type="plataforma" x="614.332" y="544.667" width="165.668" height="29.3333">
+   <properties>
+    <property name="LMTTIPE" value="0"/>
+    <property name="TIPE" value="0"/>
+    <property name="dir" value="0"/>
+   </properties>
+  </object>
+  <object id="197" type="spring" x="800" y="1040" width="32" height="16"/>
+  <object id="204" name="hcr" type="plataforma" x="218" y="1698" width="244.667" height="16">
+   <properties>
+    <property name="LMTTIPE" value="1"/>
+    <property name="TIPE" value="1"/>
+    <property name="dir" value="0"/>
+   </properties>
+  </object>
+  <object id="205" name="vcd" type="plataforma" x="793" y="1248" width="48" height="190">
+   <properties>
+    <property name="LMTTIPE" value="1"/>
+    <property name="TIPE" value="1"/>
+    <property name="dir" value="1"/>
+   </properties>
+  </object>
+  <object id="206" type="spring" x="192" y="848" width="32" height="16"/>
+  <object id="207" type="spring" x="448.667" y="623.333" width="32" height="16"/>
+  <object id="217" type="spring" x="224" y="848" width="32" height="16"/>
+  <object id="218" type="spring" x="256" y="848" width="32" height="16"/>
+  <object id="219" type="spring" x="96" y="848" width="32" height="16"/>
+  <object id="220" type="spring" x="128" y="848" width="32" height="16"/>
+ </objectgroup>
+ <objectgroup color="#0000ff" name="Enemy">
+  <object id="136" type="omnishot" gid="86" x="708.75" y="994.502" width="32" height="32"/>
+  <object id="138" type="jump" gid="77" x="438.917" y="1185.33" width="32" height="32"/>
+  <object id="139" type="sunmask" gid="70" x="128.417" y="709.835" width="32" height="32"/>
+  <object id="140" type="cloud" gid="72" x="790.25" y="821.002" width="32" height="32"/>
+  <object id="141" type="cloud" gid="72" x="675.417" y="481.168" width="32" height="32"/>
+  <object id="145" type="jump" gid="77" x="336.25" y="1188" width="32" height="32"/>
+  <object id="146" type="sunmask" gid="70" x="563.417" y="486.168" width="32" height="32"/>
+  <object id="148" type="cloud" gid="72" x="390.25" y="728.002" width="32" height="32"/>
+  <object id="149" type="omnishot" gid="86" x="672.75" y="1347.5" width="32" height="32"/>
+  <object id="152" type="jump" gid="77" x="637.25" y="1810" width="32" height="32"/>
+  <object id="153" type="omnishot" gid="86" x="384" y="513" width="32" height="32"/>
+  <object id="156" type="jump" gid="77" x="460.25" y="1804" width="32" height="32"/>
+  <object id="157" type="omnishot" gid="86" x="468" y="1608" width="32" height="32"/>
+  <object id="158" type="jump" gid="77" x="521.25" y="1068" width="32" height="32"/>
+  <object id="163" type="cloud" gid="72" x="221.674" y="1332.85" width="32" height="32"/>
+  <object id="164" type="jump" gid="77" x="700.917" y="1085" width="32" height="32"/>
+  <object id="165" type="trishot" gid="87" x="161.417" y="1055" width="32" height="32">
+   <properties>
+    <property name="dir" value="1"/>
+   </properties>
+  </object>
+  <object id="167" type="jump" gid="77" x="372.25" y="1082" width="32" height="32"/>
+  <object id="170" type="single" gid="88" x="832" y="1472" width="32" height="32">
+   <properties>
+    <property name="dir" value="0"/>
+   </properties>
+  </object>
+  <object id="198" type="omnishot" gid="86" x="354" y="1346" width="32" height="32"/>
+  <object id="199" type="cloud" gid="72" x="502.182" y="1377.94" width="32" height="32"/>
+  <object id="208" type="sunmask" gid="70" x="748.667" y="1586.67" width="32" height="32"/>
+  <object id="209" type="sunmask" gid="70" x="388.333" y="1580.67" width="32" height="32"/>
+  <object id="210" type="sunmask" gid="70" x="131" y="808" width="32" height="32"/>
+  <object id="211" type="sunmask" gid="70" x="351" y="896" width="32" height="32"/>
+  <object id="212" type="sunmask" gid="70" x="513" y="897" width="32" height="32"/>
+ </objectgroup>
+ <objectgroup color="#ff0000" name="Trap">
+  <object id="175" type="fire_trap" x="274" y="1152" width="32" height="32"/>
+  <object id="176" type="fire_trap" x="384" y="1152" width="32" height="32"/>
+  <object id="177" type="fire_trap" x="224" y="1120" width="32" height="32"/>
+  <object id="178" type="fire_trap" x="512" y="1152" width="32" height="32"/>
+  <object id="180" type="needle" x="512" y="640" width="96" height="32"/>
+  <object id="181" type="needle" x="609" y="608" width="255" height="32"/>
+  <object id="195" type="fire_trap" x="736" y="1216" width="32" height="32"/>
+  <object id="201" type="fire_trap" x="384" y="608.5" width="32" height="32"/>
+  <object id="202" type="fire_trap" x="320" y="609" width="32" height="32"/>
+ </objectgroup>
+ <objectgroup color="#ffff00" name="Items">
+  <object id="200" type="health" gid="67" x="130" y="510" width="16" height="16"/>
+  <object id="203" type="shield" gid="68" x="264" y="572.5" width="16" height="16"/>
+  <object id="213" type="health" gid="67" x="711.5" y="1244.5" width="16" height="16"/>
+  <object id="215" type="health" gid="67" x="617.333" y="340" width="16" height="16"/>
+ </objectgroup>
+</map>

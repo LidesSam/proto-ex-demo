@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="40" height="50" tilewidth="32" tileheight="32" nextobjectid="180">
+ <tileset firstgid="1" name="tileset" tilewidth="32" tileheight="32" tilecount="64">
+  <image source="../../images/tileset.png" width="256" height="256"/>
+  
+ </tileset>
+ <tileset firstgid="65" name="plataforma" tilewidth="32" tileheight="32" tilecount="2">
+  <image source="../../images/plataforma.png" width="64" height="32"/>
+ </tileset>
+ <tileset firstgid="67" name="proto_basic_item" tilewidth="16" tileheight="16" tilecount="3">
+  <image source="../../images/proto_basic_item.png" width="48" height="16"/>
+ </tileset>
+ <tileset firstgid="70" name="proto_e_fly" tilewidth="32" tileheight="32" tilecount="4">
+  <image source="../../images/proto_e_fly.png" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="74" name="proto_e_jumper" tilewidth="32" tileheight="32" tilecount="12">
+  <image source="../../images/proto_e_jumper.png" width="128" height="96"/>
+ </tileset>
+ <tileset firstgid="86" name="static_enemy" tilewidth="32" tileheight="32" tilecount="4">
+  <image source="../../images/static_enemy.png" width="64" height="64"/>
+ </tileset>
+ <layer name="Solid" width="40" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztmW1PwjAQxw9BibhkUXlllAQh2WvFl8q+/7fyLrSxNH06unU32T/5h4Yu8Mtdr0+bAcAc/Yp+E+INeqa47tF3qi1FxHaLfoAT30q1pchkks73iH5CPw9KdC6TiXJ9A/LGn2aSnt+Jj6+pPvIUqo96KChDKeOPOFt0g94XpePXxxecWEtpTPX7H/m+0UfoL+djjZ/eQ29Umz5ro232u9Qa7oMvVQvGsw3jWa1cvjXEzyt2jDmcYx1/UjQkn10/rpqa4ven2Jzk0rXE75LYpKjv+NFcl7OOXEt+XbLXcFdbny+051Y/ly80zmqrP2Ud0+czbfvseGn8WihzfsrhKyEfXyw2sXXJ92zoOw6f3oem8OUqtIfMyS+dPX4CpnNJyl32C/hrLsZXogYq8N+tSJifK89/LwXxmfdU3Pl5i35H7+B8zB074vOdYVL5PtCf6ENHPBxJyG9IEvioDvQ7LHvezeHr4o6A2Gh+pvpw3SsPGb+lchV4RkJ+bb6c/V+KfHlvPX3rwG9JiJ/JTHtamm93qi3h/Udjmebbg2qbTL9UXCnt
+  </data>
+ </layer>
+ <objectgroup name="Player">
+  <object id="13" type="save_t" x="672.727" y="861.333" width="32" height="31"/>
+  <object id="105" type="player_start" x="225.333" y="320" width="32" height="32"/>
+  <object id="157" type="corridor" gid="23" x="1183.98" y="1503.94" width="32" height="32" rotation="180"/>
+ </objectgroup>
+ <objectgroup color="#0000ff" name="Enemys">
+  <object id="123" type="sunmask" gid="70" x="404.25" y="954.335" width="32" height="32"/>
+  <object id="124" type="sunmask" gid="70" x="720.916" y="1409.67" width="32" height="32"/>
+  <object id="125" type="sunmask" gid="70" x="896.583" y="641.335" width="32" height="32"/>
+  <object id="126" type="sunmask" gid="70" x="194.917" y="885.003" width="32" height="32"/>
+  <object id="127" type="sunmask" gid="70" x="546.916" y="510.335" width="32" height="32"/>
+  <object id="128" type="sunmask" gid="70" x="645.583" y="437.001" width="32" height="32"/>
+  <object id="129" type="sunmask" gid="70" x="722.916" y="715.668" width="32" height="32"/>
+  <object id="130" type="sunmask" gid="70" x="524.128" y="347.668" width="32" height="32"/>
+  <object id="133" type="sunmask" gid="70" x="575.917" y="1344.34" width="32" height="32"/>
+  <object id="134" type="sunmask" gid="70" x="843.886" y="1313.42" width="32" height="32"/>
+  <object id="136" type="single" gid="88" x="1056" y="736" width="32" height="32">
+   <properties>
+    <property name="dir" value="0"/>
+   </properties>
+  </object>
+  <object id="137" type="omnishot" gid="86" x="290" y="1186" width="32" height="32"/>
+  <object id="138" type="trishot" gid="87" x="385.334" y="1278.67" width="32" height="32">
+   <properties>
+    <property name="dir" value="0"/>
+   </properties>
+  </object>
+  <object id="139" type="trishot" gid="87" x="862" y="1504" width="32" height="32">
+   <properties>
+    <property name="dir" value="0"/>
+   </properties>
+  </object>
+  <object id="140" type="single" gid="88" x="832.667" y="544.667" width="32" height="32">
+   <properties>
+    <property name="dir" value="0"/>
+   </properties>
+  </object>
+  <object id="141" type="single" gid="88" x="799.667" y="513.333" width="32" height="32">
+   <properties>
+    <property name="dir" value="0"/>
+   </properties>
+  </object>
+  <object id="167" type="jrobo" gid="82" x="1150" y="1207.5" width="32" height="32"/>
+  <object id="170" type="omnishot" gid="86" x="386.667" y="832.667" width="32" height="32"/>
+  <object id="171" name="r" type="trishot" gid="87" x="96" y="994" width="32" height="32">
+   <properties>
+    <property name="dir" value="1"/>
+   </properties>
+  </object>
+  <object id="175" type="jrobo" gid="82" x="791" y="1147" width="32" height="32"/>
+  <object id="177" type="single" gid="88" x="128" y="352" width="32" height="32">
+   <properties>
+    <property name="dir" value="1"/>
+   </properties>
+  </object>
+  <object id="179" type="omnishot" gid="86" x="641" y="1407.67" width="32" height="32"/>
+ </objectgroup>
+ <objectgroup color="#55ff00" name="Plataformas"/>
+ <objectgroup color="#ff0000" name="Traps">
+  <object id="150" type="needle" x="96.1177" y="1568" width="864" height="32"/>
+  <object id="151" type="needle" x="642" y="928" width="542.617" height="32"/>
+  <object id="152" type="needle" x="449" y="608.553" width="283.724" height="30.7805"/>
+  <object id="153" type="needle" x="96" y="542" width="348" height="36"/>
+  <object id="156" type="needle" x="384" y="1120" width="574" height="32"/>
+ </objectgroup>
+ <objectgroup color="#ffff00" name="Item">
+  <object id="162" type="health" gid="67" x="1090.38" y="1245" width="16" height="16"/>
+  <object id="163" type="health" gid="67" x="1120" y="1248" width="16" height="16"/>
+  <object id="174" type="power" gid="69" x="299" y="380" width="16" height="16"/>
+ </objectgroup>
+</map>

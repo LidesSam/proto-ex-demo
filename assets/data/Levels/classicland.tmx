@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="58" height="14" tilewidth="32" tileheight="32" nextobjectid="76">
+ <tileset firstgid="1" name="tileset" tilewidth="32" tileheight="32" tilecount="64">
+  <image source="../../images/tileset.png"  width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="65" name="proto_e_jumper" tilewidth="32" tileheight="32" tilecount="12">
+  <image source="../../images/proto_e_jumper.png" width="128" height="96"/>
+ </tileset>
+ <tileset firstgid="77" name="proto_e_fly" tilewidth="32" tileheight="32" tilecount="4">
+  <image source="../../images/proto_e_fly.png" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="81" name="static_enemy" tilewidth="32" tileheight="32" tilecount="4">
+  <image source="../../images/static_enemy.png" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="85" name="EnemyWalker" tilewidth="32" tileheight="32" tilecount="4">
+  <image source="../../images/proto_e_walk" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="89" name="proto_basic_item" tilewidth="16" tileheight="16" tilecount="3">
+  <image source="../../images/proto_basic_item.png" width="48" height="16"/>
+ </tileset>
+ <layer name="Solid" width="58" height="14">
+  <data encoding="base64" compression="zlib">
+   eJzdVoFOAjEMHQJeQPAiThMN8v+faRf64stst87DmPiSl9tB17V7XW/nlNLHP+ZFuFFamPS5Et4J18KzzlvpO9u1AB/wc2t4OQAHpQXEvxPuhffpK9at8KGy81D25kXt9jTvlvBy4P97Nk/Ck/IofNTx80Ac7MObV/YDdcbjnlYFkTxzKNIrirY/0WNJ3fZyiNgcqhjAi2NfdPH02FRkZJobibueWwCNLb43Yk66Js4f+EpzphTrM2/pegbhA5pbe5iN31o6R+rWqknun708R8B+kCfOJet8cli0Rj9njOoPYG3UEMeHNUfynPVp5cmxghF9GCP9wwPn2dOxPnt1PbfyzBUj4LoDJmcc+X6yvi304mzlacE6u8ztgK/e3tX9dsldZTRP/qZaPA74au2Z1YeW3FW8u8Bsmzcxp3id1Wtb/S2n7/H99b37t+7ynzNaGYI=
+  </data>
+ </layer>
+ <objectgroup name="Player">
+  <object id="8" type="player_start" x="32" y="126" width="32" height="32"/>
+  <object id="22" type="save_t" x="1728.75" y="320.25" width="32" height="32"/>
+  <object id="42" type="Yway" gid="23" x="1824" y="160.125" width="32" height="32" rotation="180"/>
+ </objectgroup>
+ <objectgroup color="#ff0000" name="Trap">
+  <object id="43" type="needle" x="128" y="384" width="448" height="32"/>
+  <object id="52" type="needle" x="704.208" y="384.167" width="64" height="32"/>
+  <object id="56" type="needle" x="1312" y="384" width="256" height="32"/>
+  <object id="69" type="fire_trap" x="1120" y="64" width="32" height="32"/>
+  <object id="70" type="fire_trap" x="1212" y="64" width="32" height="32"/>
+ </objectgroup>
+ <objectgroup color="#0000ff" name="Enemys">
+  <object id="44" type="jrobo" gid="73" x="1333.24" y="381" width="32" height="32"/>
+  <object id="45" type="jrobo" gid="73" x="1429" y="372" width="32" height="32"/>
+  <object id="47" type="roller" gid="85" x="1026" y="320" width="32" height="32"/>
+  <object id="48" type="roller" gid="85" x="1057" y="191.5" width="32" height="32"/>
+  <object id="49" type="seeker" gid="87" x="1023.5" y="415.5" width="32" height="32"/>
+  <object id="50" type="seeker" gid="87" x="1152" y="320" width="32" height="32"/>
+  <object id="61" type="trishot" gid="82" x="193" y="289" width="32" height="32">
+   <properties>
+    <property name="dir" value="1"/>
+   </properties>
+  </object>
+  <object id="62" type="single" gid="83" x="672" y="160" width="32" height="32">
+   <properties>
+    <property name="dir" value="0"/>
+   </properties>
+  </object>
+  <object id="63" type="jrobo" gid="73" x="1520" y="354" width="32" height="32"/>
+  <object id="67" type="jump" gid="68" x="1465" y="158" width="32" height="32"/>
+  <object id="68" type="jump" gid="68" x="1273" y="95" width="32" height="32"/>
+  <object id="71" type="jump" gid="68" x="1523" y="155" width="32" height="32"/>
+ </objectgroup>
+ <objectgroup color="#00ff00" name="Plataforma">
+  <object id="53" type="spring" x="928" y="400" width="32" height="16"/>
+  <object id="60" type="spring" x="1664" y="336" width="32" height="16"/>
+  <object id="65" type="spring" x="1002" y="176" width="32" height="16"/>
+ </objectgroup>
+ <objectgroup color="#ffff00" name="Items">
+  <object id="74" type="shield" gid="90" x="1159.83" y="215.5" width="16" height="16"/>
+  <object id="75" type="health" gid="89" x="1427.17" y="149.5" width="16" height="16"/>
+ </objectgroup>
+</map>
